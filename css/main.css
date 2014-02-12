@@ -1,0 +1,360 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+h1{
+	font-family:"oswald";
+    font-weight:normal;
+    font-size: 55px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+}
+p{
+	font-family:"Wellfleet";
+    font-weight:normal;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+#slide1, #slide2{ width: 100%; }
+#slide1{
+	background:url('http://www.pixeden.com/media/k2/galleries/275/002-blurred-background-texture-vol2.jpg') 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+#slide2{
+	background:url('http://turbo.designwoop.com/uploads/2012/11/111.jpg') 50% 0 no-repeat fixed;
+	color: blue;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+	
+}
+#slide3{
+	background:url('http://eventsonhand.com/wp-content/uploads/2013/07/blurred-background-10-2000x1250.jpg') 50% 0 no-repeat fixed;
+	color: green;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+#slide4{
+	background:url('http://www.flashuser.net/wp-content/uploads/2013/01/blurred-background-1.jpg') 50% 0 no-repeat fixed;
+	color: green;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+#slide5{
+	background:url('http://i258.photobucket.com/albums/hh253/jimifunguzz/doge-so-gif.gif') 50% 0 repeat fixed;
+	color: green;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	
+}
+#logo a { 
+	color: blue; 
+	text-decoration: none; 
+	float: left; 
+	font-size: 30px; 
+	margin-top: 20px; 
+	color: #fff; 
+	font-family:"Wellfleet"; 
+	font-weight: bold; 
+}
+#header {
+	width: 100%;
+	background: url('../img/header-bg.png');
+	height: 80px;
+	position: fixed;
+	margin-top: 30px;
+}
+#nav { width: 410px; float: right; margin-top: 20px; 
+}
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	list-style: none;
+}
+#nav li{
+	margin-top: 9px;
+	float: left;
+	padding-left: 21px;
+}
+
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; 
+}
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; 
+}
+#nav li a:hover { color: #fff; opacity:1;  
+}
+#me {
+	background: url('http://distilleryimage3.s3.amazonaws.com/dc40a3088d3811e3ac99128fcb024f53_8.jpg')no-repeat; 
+	width: 500px; 
+	height: 500px; 
+	margin: 0 auto; 
+	position: relative; 
+	bottom: -35px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
