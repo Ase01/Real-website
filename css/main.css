@@ -92,20 +92,20 @@ textarea {
    ========================================================================== */
 h1{
 	font-family:"oswald";
-    font-weight:normal;
+    font-weight: bold;
     font-size: 55px;
     text-align: center;
-    color: #fff;
+    color: #FF9966;
     margin: 0;
     padding: 0;
 
 }
 p{
 	font-family:"Wellfleet";
-    font-weight:normal;
+    font-weight: italic;
     font-size: 20px;
     text-align: center;
-    color: #fff;
+    color: #FFCC99;
     margin: 0;
     padding: 0;
 }
@@ -152,12 +152,11 @@ p{
 	
 }
 #logo a { 
-	color: blue; 
 	text-decoration: none; 
 	float: left; 
 	font-size: 30px; 
-	margin-top: 20px; 
-	color: #fff; 
+	margin-top: 10px; 
+	color: #99CC00; 
 	font-family:"Wellfleet"; 
 	font-weight: bold; 
 }
@@ -168,7 +167,10 @@ p{
 	position: fixed;
 	margin-top: 30px;
 }
-#nav { width: 410px; float: right; margin-top: 20px; 
+#nav { 
+padding: 20px
+float: right; 
+margin-top: 20px; 
 }
 #nav ul{
 	list-style: none;
@@ -182,11 +184,11 @@ p{
 	padding-left: 21px;
 }
 
-#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; 
+#nav li a { color: #33CCCC; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; 
 }
-#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; 
+#nav li a.active { color: #0099CC; opacity:1; border-bottom: 2px solid #fff; 
 }
-#nav li a:hover { color: #fff; opacity:1;  
+#nav li a:hover { color: #33CCCC; opacity:1;  
 }
 #me {
 	background: url('http://distilleryimage3.s3.amazonaws.com/dc40a3088d3811e3ac99128fcb024f53_8.jpg')no-repeat; 
